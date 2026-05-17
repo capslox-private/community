@@ -54,13 +54,6 @@
       },
       "minItems": 1
     },
-    "fs_allow": {
-      "type": "array",
-      "description": "Filesystem paths that shell_action commands are allowed to access.",
-      "items": {
-        "type": "string"
-      }
-    },
     "key_sequence_timeout_ms": {
       "type": "integer",
       "minimum": 0,
@@ -811,7 +804,7 @@
         },
         "command": {
           "type": "string",
-          "description": "Shell command to execute. The command's working directory is restricted by fs_allow."
+          "description": "Shell command to execute."
         },
         "when": {
           "$ref": "#/$defs/WhenClauses"
