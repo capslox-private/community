@@ -93,11 +93,6 @@
           "$ref": "#/$defs/MissBehavior",
           "description": "What happens when a key has no binding in this layer."
         },
-        "propagate_modifiers": {
-          "type": "boolean",
-          "default": true,
-          "description": "Whether OS modifiers (shift, alt, etc.) are propagated through this layer's bindings."
-        },
         "enabled": {
           "type": "boolean",
           "default": true,
