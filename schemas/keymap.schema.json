@@ -299,9 +299,6 @@
           "$ref": "#/$defs/ActionShowPreferencesObject"
         },
         {
-          "$ref": "#/$defs/ActionShowCheatSheetObject"
-        },
-        {
           "$ref": "#/$defs/ActionEditKeymapObject"
         },
         {
@@ -366,9 +363,6 @@
         },
         {
           "$ref": "#/$defs/ActionShowPreferencesObject"
-        },
-        {
-          "$ref": "#/$defs/ActionShowCheatSheetObject"
         },
         {
           "$ref": "#/$defs/ActionEditKeymapObject"
@@ -496,23 +490,6 @@
         }
       },
       "description": "Open the Capslox preferences window."
-    },
-    "ActionShowCheatSheetObject": {
-      "type": "object",
-      "required": [
-        "action"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "action": {
-          "const": "show_cheat_sheet"
-        },
-        "when": {
-          "$ref": "#/$defs/WhenClauses"
-        }
-      },
-      "description": "DEPRECATED: Use `edit_keymap` instead. The cheat sheet window has no working v3 data source and shows a stub placeholder. Kept for backward compatibility with hand-written configs.",
-      "deprecated": true
     },
     "ActionEditKeymapObject": {
       "type": "object",
