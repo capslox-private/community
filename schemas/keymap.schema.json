@@ -511,7 +511,8 @@
           "$ref": "#/$defs/WhenClauses"
         }
       },
-      "description": "Show the keyboard shortcut cheat sheet."
+      "description": "DEPRECATED: Use `edit_keymap` instead. The cheat sheet window has no working v3 data source and shows a stub placeholder. Kept for backward compatibility with hand-written configs.",
+      "deprecated": true
     },
     "ActionEditKeymapObject": {
       "type": "object",
