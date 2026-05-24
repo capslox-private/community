@@ -344,7 +344,7 @@
           "$ref": "#/$defs/ActionShellActionObject"
         },
         {
-          "$ref": "#/$defs/ActionNoOpObject"
+          "$ref": "#/$defs/ActionNoopObject"
         }
       ],
       "description": "An action describes WHAT to do. Can be a string shorthand or a typed object with \"action\" discriminator."
@@ -410,7 +410,7 @@
           "$ref": "#/$defs/ActionShellActionObject"
         },
         {
-          "$ref": "#/$defs/ActionNoOpObject"
+          "$ref": "#/$defs/ActionNoopObject"
         }
       ]
     },
@@ -790,7 +790,7 @@
       },
       "description": "Execute a shell command."
     },
-    "ActionNoOpObject": {
+    "ActionNoopObject": {
       "type": "object",
       "required": [
         "action"
@@ -798,13 +798,13 @@
       "additionalProperties": false,
       "properties": {
         "action": {
-          "const": "no_op"
+          "const": "noop"
         },
         "when": {
           "$ref": "#/$defs/WhenClauses"
         }
       },
-      "description": "No-op: consume the key but do nothing (useful in when-clauses to disable a binding for specific apps)."
+      "description": "Noop: consume the key but do nothing (useful in when-clauses to disable a binding for specific apps)."
     },
     "WhenClauses": {
       "oneOf": [
