@@ -1,6 +1,7 @@
 # Capslox Community
 
 A place to chat, share tips, and give feedback with other Capslox users. Keyboards, productivity tools, and other keyboard tools are also welcome topics.
+
 Capslox 用户交流、分享与反馈的地方。也欢迎讨论键盘、效率工具（包括其他键盘相关工具）等话题。
 
 <!--[English](#english) | [中文](#chinese)-->
